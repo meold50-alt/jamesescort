@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James Portfolio</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header p {
+            font-size: 1rem;
+            margin-top: 5px;
+            color: #ccc;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+        }
+
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-image {
+            flex: 1 1 300px;
+        }
+
+        .profile-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .profile-info {
+            flex: 2 1 400px;
+        }
+
+        .profile-info h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .profile-info p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .gallery {
+            margin-top: 40px;
+        }
+
+        .gallery h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Modal for viewing images */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+
+        .modal:target {
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+            }
+
+            .profile-info {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>James Portfolio</h1>
+    <p>Professional Escort | Exclusive Services</p>
+</header>
+
+<div class="container">
+    <!-- Profile Section -->
+    <div class="profile">
+        <div class="profile-image">
+            <img src="https://via.placeholder.com/400x500" alt="James Profile">
+        </div>
+        <div class="profile-info">
+            <h2>James</h2>
+            <p>Age: 28 | Location: New York</p>
+            <p>James offers exclusive companionship and professional escort services with a focus on discretion, elegance, and unforgettable experiences.</p>
+            <p>Specialties: Fine dining, social events, private companionship.</p>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <a href="#img1"><img src="https://via.placeholder.com/300x400" alt="James Image 1"></a>
+            <a href="#img2"><img src="https://via.placeholder.com/300x400" alt="James Image 2"></a>
+            <a href="#img3"><img src="https://via.placeholder.com/300x400" alt="James Image 3"></a>
+            <a href="#img4"><img src="https://via.placeholder.com/300x400" alt="James Image 4"></a>
+        </div>
+
+        <!-- Modal Images -->
+        <div id="img1" class="modal"><a href="#"><img src="https://via.placeholder.com/800x1000" alt="James Image 1"></a></div>
+        <div id="img2" class="modal"><a href="#"><img src="https://via.placeholder.com/800x1000" alt="James Image 2"></a></div>
+        <div id="img3" class="modal"><a href="#"><img src="https://via.placeholder.com/800x1000" alt="James Image 3"></a></div>
+        <div id="img4" class="modal"><a href="#"><img src="https://via.placeholder.com/800x1000" alt="James Image 4"></a></div>
+    </div>
+</div>
+
+</body>
+</html>
