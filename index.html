@@ -3,9 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Male Escort, Uganda,Kampala</title>
+    
+    <title>James | Professional Male Companion in Kampala, Uganda</title>
+    <meta name="description" content="James offers premium, discreet, and professional male escort and companionship services in Kampala, Uganda. High-end experience for exclusive clients.">
+    <meta name="keywords" content="James escort Uganda, male escort Kampala, professional companion Uganda, private massage Kampala, male model Uganda">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <style>
-        /* Reset some default styles */
+        /* Modern CSS Variables for easy color management */
+        :root {
+            --primary-gold: #d4af37;
+            --dark-bg: #1a1a1a;
+            --light-bg: #ffffff;
+            --text-main: #333333;
+            --text-muted: #777777;
+            --whatsapp-green: #25D366;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -13,50 +28,61 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
             line-height: 1.6;
-            background-color: #f9f9f9;
-            color: #333;
+            background-color: #f4f4f4;
+            color: var(--text-main);
         }
 
+        /* Header Styling */
         header {
-            background: #222;
+            background: var(--dark-bg);
             color: #fff;
-            padding: 20px 0;
+            padding: 60px 20px;
             text-align: center;
+            border-bottom: 4px solid var(--primary-gold);
         }
 
         header h1 {
-            font-size: 2rem;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
         }
 
         header p {
-            font-size: 1rem;
-            margin-top: 5px;
-            color: #ccc;
+            font-weight: 300;
+            color: var(--primary-gold);
+            font-size: 1.1rem;
         }
 
         .container {
             width: 90%;
-            max-width: 1200px;
-            margin: 30px auto;
+            max-width: 1100px;
+            margin: -40px auto 40px; /* Overlap effect */
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
+        /* Profile Section */
         .profile {
             display: flex;
             flex-wrap: wrap;
-            gap: 30px;
-            align-items: center;
-            justify-content: center;
+            gap: 40px;
+            align-items: flex-start;
         }
 
         .profile-image {
-            flex: 1 1 300px;
+            flex: 1 1 350px;
         }
 
         .profile-image img {
             width: 100%;
-            border-radius: 10px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 5px solid #fff;
         }
 
         .profile-info {
@@ -64,114 +90,176 @@
         }
 
         .profile-info h2 {
-            font-size: 1.8rem;
-            margin-bottom: 10px;
+            font-size: 2.2rem;
+            color: var(--dark-bg);
+            margin-bottom: 15px;
+        }
+
+        .tagline {
+            display: inline-block;
+            background: var(--primary-gold);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
         }
 
         .profile-info p {
-            font-size: 1rem;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            color: var(--text-muted);
         }
 
+        /* Contact Details Section */
+        .contact-card {
+            background: #fff8e1;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border-left: 5px solid var(--primary-gold);
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background: var(--whatsapp-green);
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-whatsapp:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+        }
+
+        /* Gallery */
         .gallery {
-            margin-top: 40px;
+            margin-top: 60px;
         }
 
         .gallery h2 {
             text-align: center;
-            margin-bottom: 20px;
-            font-size: 1.5rem;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .gallery h2::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: var(--primary-gold);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
         }
 
         .gallery-grid img {
             width: 100%;
+            height: 300px;
+            object-fit: cover;
             border-radius: 10px;
-            cursor: pointer;
-            transition: transform 0.3s;
+            transition: 0.4s;
+            filter: grayscale(20%);
         }
 
         .gallery-grid img:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
+            filter: grayscale(0%);
         }
 
-        /* Modal for viewing images */
+        /* Modal / Lightbox */
         .modal {
             display: none;
             position: fixed;
-            z-index: 1000;
+            z-index: 2000;
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0,0,0,0.8);
+            background: rgba(0,0,0,0.95);
             justify-content: center;
             align-items: center;
         }
 
         .modal img {
             max-width: 90%;
-            max-height: 80%;
-            border-radius: 10px;
+            max-height: 85vh;
+            border: 3px solid var(--primary-gold);
         }
 
-        .modal:target {
-            display: flex;
+        .modal:target { display: flex; }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
         }
 
         @media (max-width: 768px) {
-            .profile {
-                flex-direction: column;
-            }
-
-            .profile-info {
-                text-align: center;
-            }
+            header h1 { font-size: 1.8rem; }
+            .container { width: 95%; padding: 20px; }
+            .profile-info { text-align: center; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>James Male Escort | Uganda, Kampala</h1>
-    <p>Professional Escort | Exclusive Services</p>
+    <h1>JAMES</h1>
+    <p>Premium Companion | Kampala, Uganda</p>
 </header>
 
 <div class="container">
-    <!-- Profile Section -->
     <div class="profile">
         <div class="profile-image">
-             <a href="#img4"><img src="one.png" alt="James Uganda Male Escort Kampala"></a>
+             <a href="#img4"><img src="one.png" alt="James Uganda Male Escort"></a>
         </div>
         <div class="profile-info">
-            <h2>James</h2>
-            <p>Age: 20 | Location: Uganda, Kampala</p>
-            <p>Exclusive companionship and professional escort services with a focus on discretion, elegance, and unforgettable experiences.</p>
-            <p>Private companionship, involving massage and happy endings</p>
+            <span class="tagline">Exclusive & Discreet</span>
+            <h2>About James</h2>
+            <p><strong>Age:</strong> 20 &nbsp; | &nbsp; <strong>Location:</strong> Kampala, Uganda</p>
+            <p>Welcome to a world of refined companionship. I provide an elegant, high-end experience for those who value discretion, intellect, and physical excellence.</p>
+            <p>Whether you require a date for a high-profile event or a private, relaxing evening, I offer a professional service tailored to your specific needs.</p>
+            
+            <div class="contact-card">
+                <h3>Book an Appointment</h3>
+                <p>Available for outcall and incall services within Kampala.</p>
+                <p><strong>WhatsApp/Call:</strong> +256 771 456240</p>
+                <a href="https://wa.me/256771456240" class="btn-whatsapp">Chat on WhatsApp</a>
+            </div>
         </div>
     </div>
 
-    <!-- Gallery Section -->
     <div class="gallery">
-        <h2>Pictures of James</h2>
+        <h2>Portfolio</h2>
         <div class="gallery-grid">
-            <a href="#img1"><img src="two.png" alt="James Uganda Male Escort Kampala"></a>
-            <a href="#img2"><img src="three.png" alt="James Uganda Male Escort Kampala"></a>
-            <a href="#img3"><img src="four.png" alt="James Uganda Male Escort Kampala"></a>
+            <a href="#img1"><img src="two.png" alt="James Gallery 1"></a>
+            <a href="#img2"><img src="three.png" alt="James Gallery 2"></a>
+            <a href="#img3"><img src="four.png" alt="James Gallery 3"></a>
         </div>
 
-        <!-- Modal Images -->
-        <div id="img1" class="modal"><a href="#"><img src="two.png" alt="James Uganda Male Escort Kampala"></a></div>
-        <div id="img2" class="modal"><a href="#"><img src="three.png" alt="James Uganda Male Escort Kampala"></a></div>
-        <div id="img3" class="modal"><a href="#"><img src="four.png" alt="James Uganda Male Escort Kampala"></a></div>
-        <div id="img4" class="modal"><a href="#"><img src="one.png" alt="James Uganda Male Escort Kampala"></a></div>
+        <div id="img1" class="modal"><a href="#"><img src="two.png" alt="View"></a></div>
+        <div id="img2" class="modal"><a href="#"><img src="three.png" alt="View"></a></div>
+        <div id="img3" class="modal"><a href="#"><img src="four.png" alt="View"></a></div>
+        <div id="img4" class="modal"><a href="#"><img src="one.png" alt="View"></a></div>
     </div>
 </div>
+
+<footer>
+    <p>&copy; 2024 James Professional Companion. All rights reserved. <br> Discretion Guaranteed.</p>
+</footer>
 
 </body>
 </html>
