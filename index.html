@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>James | Professional Male Companion in Kampala, Uganda</title>
-    <meta name="description" content="James offers premium, discreet, and professional male escort and companionship services in Kampala, Uganda. High-end experience for exclusive clients.">
-    <meta name="keywords" content="James escort Uganda, male escort Kampala, professional companion Uganda, private massage Kampala, male model Uganda">
+    <title>James | Exclusive Male Companion for Women in Kampala</title>
+    <meta name="description" content="A refined, discreet, and charming companion for the modern woman. James offers exclusive companionship, dinner dates, and relaxation services in Kampala, Uganda.">
+    <meta name="keywords" content="James Kampala, male companion for women Uganda, discreet male escort Kampala, luxury dating Kampala, private massage for ladies">
     
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     
     <style>
-        /* Modern CSS Variables for easy color management */
         :root {
-            --primary-gold: #d4af37;
-            --dark-bg: #1a1a1a;
-            --light-bg: #ffffff;
-            --text-main: #333333;
-            --text-muted: #777777;
-            --whatsapp-green: #25D366;
+            --primary-rose: #a67c7c; /* Sophisticated muted rose */
+            --champagne: #f7e7ce;
+            --soft-white: #ffffff;
+            --deep-charcoal: #2d2d2d;
+            --text-gray: #555555;
+            --whatsapp-color: #25D366;
         }
 
         * {
@@ -28,237 +27,221 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: var(--text-main);
+            font-family: 'Montserrat', sans-serif;
+            background-color: #faf7f5;
+            color: var(--deep-charcoal);
+            line-height: 1.7;
         }
 
-        /* Header Styling */
+        /* Hero Header */
         header {
-            background: var(--dark-bg);
-            color: #fff;
-            padding: 60px 20px;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('one.png'); /* Subtle overlay */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
             text-align: center;
-            border-bottom: 4px solid var(--primary-gold);
+            padding: 20px;
         }
 
         header h1 {
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            letter-spacing: 4px;
             margin-bottom: 10px;
+            font-weight: 400;
         }
 
         header p {
-            font-weight: 300;
-            color: var(--primary-gold);
-            font-size: 1.1rem;
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            font-style: italic;
+            color: var(--champagne);
         }
 
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: -40px auto 40px; /* Overlap effect */
-            background: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        /* Main Content Container */
+        .main-wrapper {
+            max-width: 1000px;
+            margin: -60px auto 60px;
+            background: var(--soft-white);
+            padding: 50px;
+            border-radius: 2px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
         }
 
-        /* Profile Section */
-        .profile {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            align-items: flex-start;
+        .intro-section {
+            text-align: center;
+            margin-bottom: 50px;
         }
 
-        .profile-image {
-            flex: 1 1 350px;
-        }
-
-        .profile-image img {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            border: 5px solid #fff;
-        }
-
-        .profile-info {
-            flex: 2 1 400px;
-        }
-
-        .profile-info h2 {
+        .intro-section h2 {
+            font-family: 'Playfair Display', serif;
             font-size: 2.2rem;
-            color: var(--dark-bg);
-            margin-bottom: 15px;
-        }
-
-        .tagline {
-            display: inline-block;
-            background: var(--primary-gold);
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
             margin-bottom: 20px;
+            color: var(--primary-rose);
         }
 
-        .profile-info p {
+        .intro-section p {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            max-width: 700px;
+            margin: 0 auto 20px;
+        }
+
+        /* Details Grid */
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+            padding-top: 40px;
+        }
+
+        .feature-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
             margin-bottom: 15px;
-            color: var(--text-muted);
+            color: var(--primary-rose);
         }
 
-        /* Contact Details Section */
-        .contact-card {
-            background: #fff8e1;
-            padding: 25px;
-            border-radius: 10px;
-            margin-top: 30px;
-            border-left: 5px solid var(--primary-gold);
+        /* Contact & CTA */
+        .booking-area {
+            background: #fdfaf8;
+            padding: 40px;
+            text-align: center;
+            margin-top: 50px;
+            border: 1px solid var(--champagne);
         }
 
-        .btn-whatsapp {
+        .whatsapp-btn {
             display: inline-block;
-            background: var(--whatsapp-green);
+            background-color: var(--deep-charcoal);
             color: white;
-            padding: 12px 25px;
+            padding: 18px 40px;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 0px; /* Sharp edges for high-fashion look */
             font-weight: 600;
-            margin-top: 10px;
+            letter-spacing: 2px;
             transition: 0.3s;
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
         }
 
-        .btn-whatsapp:hover {
-            background: #128C7E;
-            transform: translateY(-2px);
+        .whatsapp-btn:hover {
+            background-color: var(--primary-rose);
+            color: white;
         }
 
         /* Gallery */
-        .gallery {
-            margin-top: 60px;
-        }
-
-        .gallery h2 {
+        .gallery-title {
             text-align: center;
-            margin-bottom: 30px;
-            position: relative;
-        }
-
-        .gallery h2::after {
-            content: '';
-            width: 50px;
-            height: 3px;
-            background: var(--primary-gold);
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin: 60px 0 30px;
         }
 
         .gallery-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
         }
 
         .gallery-grid img {
             width: 100%;
-            height: 300px;
+            height: 400px;
             object-fit: cover;
-            border-radius: 10px;
-            transition: 0.4s;
-            filter: grayscale(20%);
+            cursor: pointer;
+            transition: opacity 0.3s;
         }
 
         .gallery-grid img:hover {
-            transform: scale(1.03);
-            filter: grayscale(0%);
+            opacity: 0.8;
         }
 
-        /* Modal / Lightbox */
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            background: var(--deep-charcoal);
+            color: #999;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        /* Modal */
         .modal {
             display: none;
             position: fixed;
-            z-index: 2000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.95);
+            z-index: 1000;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(255,255,255,0.98);
             justify-content: center;
             align-items: center;
         }
-
-        .modal img {
-            max-width: 90%;
-            max-height: 85vh;
-            border: 3px solid var(--primary-gold);
-        }
-
+        .modal img { max-height: 80vh; max-width: 90%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
         .modal:target { display: flex; }
 
-        footer {
-            text-align: center;
-            padding: 40px;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
+        /* Responsive */
         @media (max-width: 768px) {
-            header h1 { font-size: 1.8rem; }
-            .container { width: 95%; padding: 20px; }
-            .profile-info { text-align: center; }
+            .features { grid-template-columns: 1fr; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .main-wrapper { width: 95%; padding: 25px; }
+            header h1 { font-size: 2.5rem; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>JAMES</h1>
-    <p>Premium Companion | Kampala, Uganda</p>
+    <h1>James</h1>
+    <p>A Gentleman's Company</p>
 </header>
 
-<div class="container">
-    <div class="profile">
-        <div class="profile-image">
-             <a href="#img4"><img src="one.png" alt="James Uganda Male Escort"></a>
+<div class="main-wrapper">
+    <div class="intro-section">
+        <h2>Refined. Attentive. Discreet.</h2>
+        <p>Providing a sanctuary of relaxation and sophisticated companionship for the discerning woman. James is a 20-year-old gentleman based in Kampala, dedicated to making you feel heard, appreciated, and utterly relaxed.</p>
+    </div>
+
+    <div class="features">
+        <div class="feature-box">
+            <h3>The Experience</h3>
+            <p>From meaningful conversation over dinner to quiet, private moments of relaxation. My focus is entirely on your comfort and your desires.</p>
         </div>
-        <div class="profile-info">
-            <span class="tagline">Exclusive & Discreet</span>
-            <h2>About James</h2>
-            <p><strong>Age:</strong> 20 &nbsp; | &nbsp; <strong>Location:</strong> Kampala, Uganda</p>
-            <p>Welcome to a world of refined companionship. I provide an elegant, high-end experience for those who value discretion, intellect, and physical excellence.</p>
-            <p>Whether you require a date for a high-profile event or a private, relaxing evening, I offer a professional service tailored to your specific needs.</p>
-            
-            <div class="contact-card">
-                <h3>Book an Appointment</h3>
-                <p>Available for outcall and incall services within Kampala.</p>
-                <p><strong>WhatsApp/Call:</strong> +256 771 456240</p>
-                <a href="https://wa.me/256771456240" class="btn-whatsapp">Chat on WhatsApp</a>
-            </div>
+        <div class="feature-box">
+            <h3>Commitment to Safety</h3>
+            <p>I understand the importance of discretion and privacy. Your sessions are 100% confidential, handled with the utmost respect and professionalism.</p>
         </div>
     </div>
 
-    <div class="gallery">
-        <h2>Portfolio</h2>
-        <div class="gallery-grid">
-            <a href="#img1"><img src="two.png" alt="James Gallery 1"></a>
-            <a href="#img2"><img src="three.png" alt="James Gallery 2"></a>
-            <a href="#img3"><img src="four.png" alt="James Gallery 3"></a>
-        </div>
+    <div class="booking-area">
+        <h3>Reserve Your Time</h3>
+        <p>I am available for both social outings and private sessions within Kampala.</p>
+        <p style="margin-top: 10px; font-weight: 600;">+256 771 456240</p>
+        <a href="https://wa.me/256771456240" class="whatsapp-btn">Inquire via WhatsApp</a>
+    </div>
 
-        <div id="img1" class="modal"><a href="#"><img src="two.png" alt="View"></a></div>
-        <div id="img2" class="modal"><a href="#"><img src="three.png" alt="View"></a></div>
-        <div id="img3" class="modal"><a href="#"><img src="four.png" alt="View"></a></div>
-        <div id="img4" class="modal"><a href="#"><img src="one.png" alt="View"></a></div>
+    <h2 class="gallery-title">The Gallery</h2>
+    <div class="gallery-grid">
+        <a href="#img1"><img src="two.png" alt="James Portfolio"></a>
+        <a href="#img2"><img src="three.png" alt="James Portfolio"></a>
+        <a href="#img3"><img src="four.png" alt="James Portfolio"></a>
     </div>
 </div>
 
+<div id="img1" class="modal"><a href="#"><img src="two.png"></a></div>
+<div id="img2" class="modal"><a href="#"><img src="three.png"></a></div>
+<div id="img3" class="modal"><a href="#"><img src="four.png"></a></div>
+
 <footer>
-    <p>&copy; 2024 James Professional Companion. All rights reserved. <br> Discretion Guaranteed.</p>
+    <p>EXCLUSIVELY FOR WOMEN | KAMPALA, UGANDA</p>
+    <p style="margin-top: 15px;">&copy; 2024 JAMES. ALL RIGHTS RESERVED.</p>
 </footer>
 
 </body>
